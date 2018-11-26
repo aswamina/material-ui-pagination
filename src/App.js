@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import './App.css';
 import EnhancedTable from './components/PaginatedSortableTable/EnhancedTable';
-import SelectedListItem from "./components/LegendFilter/SelectedListItem";
+//import SelectedListItem from "./components/LegendFilter/SelectedListItem";
+import FilterPublications from "./components/LegendFilter/FilterPublications";
 
 class App extends Component {
     render() {
         return (
             <div style={styles} className="App">
-                <SelectedListItem/>
+                <FilterPublications/>
                 <EnhancedTable/>
             </div>
         );
