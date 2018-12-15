@@ -36,10 +36,12 @@ class SelectedListItem extends React.Component {
                             selected={this.state.selectedIndex === index}
                             onClick={event => this.handleListItemClick(event, index)}
                         >
-                            <ListItemIcon>
-                                <Lens style={{color: element.iconColor}}/>
-                            </ListItemIcon>
-
+                            { typeof element.iconColor !== "undefined" ?
+                                <ListItemIcon>
+                                    <Lens style={{color: element.iconColor}}/>
+                                </ListItemIcon> :
+                                null
+                            }
                             <ListItemText primary={element.category}/>
                         </ListItem>
                     )}
