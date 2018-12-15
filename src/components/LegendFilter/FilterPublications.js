@@ -4,7 +4,7 @@ import SelectedListItem from "./SelectedListItem";
 const FilterPublications = () => {
     const publications = [
         {
-            iconColor: 'transparent',
+            iconColor: undefined,
             category: 'All Publications'
         },
         {
